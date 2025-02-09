@@ -1,0 +1,76 @@
+.aboutBox .img2 img
+{
+    height: 40vmax;
+}
+
+.aboutBox .img1 img
+{
+    height: 2vw;
+}
+.aboutBox .img1 .vectorimg
+{
+    height: 5vw;
+}
+.aboutBox .img1 .btns
+{
+    height: 4.5vw;
+
+}
+.aboutBox
+{
+    padding: 50px;
+}
+.aboutData
+{
+    padding-top: 20px;
+}
+.aboutData i
+{
+    padding: 8px;
+    background-color: black;
+    color: white;
+    border-radius: 50%;
+    
+}
+.aboutData .col-12
+{
+    margin-top: 15px;
+}
+.aboutData .col-12 p
+{
+    margin-left: 10px;
+}
+
+
+@media (max-width : 769px) {
+    .aboutBox
+    {
+        padding: 0px;
+    }
+    .aboutBox .img1 img
+    {
+        height: 5vw;
+    }
+    .aboutBox .img1 .vectorimg
+    {
+    height: 10vw;
+    }
+    .aboutBox .img1 .btns
+    {
+        position: absolute;
+        top: 48%;
+        left: 32%;
+        height: 7vmax;
+    }
+    .aboutBox .img2 img
+    {
+        margin-top: 20px;
+        height: 55vmax;
+    }
+    .aboutData
+    {
+        margin-top: 40px;
+    }
+        
+}
+

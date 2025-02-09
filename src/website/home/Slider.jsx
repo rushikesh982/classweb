@@ -1,52 +1,72 @@
-import React from "react";
-import './Slider.css'
+import React, { useEffect } from "react";
+// import "bootstrap/dist/css/bootstrap.min.css";
+// import "bootstrap/dist/js/bootstrap.bundle.min";
+import "./Slider.css";
 
+const data = [
+    {
+        "img": "slider1.png",
+        "title": "Slide 1"
+    },
+    {
+        "img": "slider2.png",
+        "title": "Slide 2"
+    },
+    {
+        "img": "slider3.png",
+        "title": "Slide 3"
+    }
+];
 
-function Slider(){
-    return(
-        <>
-           
-            <div id="carouselExampleDark" className="carousel carousel-dark slide">
-              <div className="carousel-indicators">
-                <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" className="active" aria-current="true" aria-label="Slide 1"></button>
-                <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
-              </div>
-              <div className="carousel-inner">
-                <div className="carousel-item active" data-bs-interval="10000">
-                  <img src="..." className="d-block w-100" alt="..." />
-                  <div className="carousel-caption d-none d-md-block">
-                    <h5>First slide label</h5>
-                    <p>Some representative placeholder content for the first slide.</p>
-                  </div>
-                </div>
-                <div className="carousel-item" data-bs-interval="2000">
-                  <img src="..." className="d-block w-100" alt="..." />
-                  <div className="carousel-caption d-none d-md-block">
-                    <h5>Second slide label</h5>
-                    <p>Some representative placeholder content for the second slide.</p>
-                  </div>
-                </div>
-                <div className="carousel-item">
-                  <img src="..." className="d-block w-100" alt="..." />
-                  <div className="carousel-caption d-none d-md-block">
-                    <h5>Third slide label</h5>
-                    <p>Some representative placeholder content for the third slide.</p>
-                  </div>
-                </div>
-              </div>
-              <button className="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
-                <span className="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span className="visually-hidden">Previous</span>
-              </button>
-              <button className="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
-                <span className="carousel-control-next-icon" aria-hidden="true"></span>
-                <span className="visually-hidden">Next</span>
-              </button>
+function Slider() {
+    useEffect(() => {
+        const carouselElement = document.getElementById("carouselExampleDark");
+        if (carouselElement) {
+            new window.bootstrap.Carousel(carouselElement, {
+                interval: 3000, // Slide every 3 seconds
+                ride: "carousel", // Auto-slide
+                wrap: true // Loop slides
+            });
+        }
+    }, []);
+
+    return (
+        <div id="carouselExampleDark" className="carousel slide" data-bs-ride="carousel">
+            {/* Carousel Indicators */}
+            <div>
+                {data.map((_, idx) => (
+                    <button
+                        key={idx}
+                        type="button"
+                        data-bs-target="#carouselExampleDark"
+                        data-bs-slide-to={idx}
+                        className={idx === 0 ? "active" : ""}
+                        aria-current={idx === 0 ? "true" : undefined}
+                        aria-label={`Slide ${idx + 1}`}
+                    ></button>
+                ))}
             </div>
-        </>
-    )
 
+            {/* Carousel Items */}
+            <div className="carousel-inner">
+                {data.map((item, idx) => (
+                    <div 
+                        key={idx} 
+                        className={`carousel-item ${idx === 0 ? "active" : ""}`} 
+                        data-bs-interval="3000"
+                    >
+                        <img src={process.env.PUBLIC_URL + "/" + item.img} className="d-block w-100" alt={item.title} />
+                    </div>
+                ))}
+            </div>
+
+            {/* Previous & Next Buttons */}
+            <button className="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+            </button>
+            <button className="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+            </button>
+        </div>
+    );
 }
 
-export default Slider
+export default Slider;

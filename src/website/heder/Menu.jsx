@@ -47,20 +47,20 @@ export default function Menu(){
             {/* nav start */}
 
             <div className="navContainer">
-                <div className="image-box grid gap-3">
-                    <img src="logo.png" className="g-col-6" alt="" />
-                    <img src="Takalkar-classes-centres-in-pune-and-pcmc.png" className="g-col-6" alt="" />
+                <div className="image-box ">
+                    <img src="logo.png" alt="" />
+                    <img src="Takalkar-classes-centres-in-pune-and-pcmc.png" alt="" />
                 </div>
-                <div className="navItemBox">
+                <div className="navItemBox ">
                     <ul>
-                        <li>home</li>
-                        <li>about</li>
-                        <li>courses</li>
-                        <li>admission</li>
-                        <li>gallery</li>
-                        <li>contact</li>
+                        <li>Home</li>
+                        <li>About</li>
+                        <li>Courses</li>
+                        <li>Admission</li>
+                        <li>Gallery</li>
+                        <li>Contact</li>
                         <i class="ri-menu-line"></i>
-                        <button className="btn btn-danger">enquire now</button>
+                        <button className="btn btn-danger text-capitalize">enquire now</button>
                     </ul>
                 </div>
             </div>

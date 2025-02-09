@@ -1,0 +1,10 @@
+.carouselExampleDark
+{
+    height: 100px !important;
+    overflow: hidden;
+}
+.carousel-inner img
+{
+    height: 550px;
+}
+
