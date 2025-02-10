@@ -1,0 +1,15 @@
+.founder-sec
+{
+    margin-top: 400px !important;
+    /* background-color: red; */
+}
+.founder-sec img
+{
+    height: 30vmax;
+}
+@media (max-width: 767px) {
+    .founder-sec
+    {
+        margin-top: 160vmax !important;
+    }
+}
