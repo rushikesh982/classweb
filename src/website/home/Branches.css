@@ -1,0 +1,31 @@
+#card
+{
+    height: 350px;
+    width: 290px;
+    background-color: #eaeaea;
+    margin-top: 20px;
+    border-radius: 10px;
+    position: relative;
+}
+.cardOuter
+{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.cardbox
+{
+    height: 350px;
+    width: 290px;
+    background-color: red;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+}
+#card:hover 
+{
+      transition: all 0.3s ease-out;
+      background-color: #0d6efd;
+    }
