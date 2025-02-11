@@ -48,7 +48,7 @@ export default function Footer(){
                     </p>
                     <p><i class="ri-phone-line"></i>+91 1234567890</p>
                 </div>
-                <div className="box1">
+                <div className="box1 quickLinks">
                     <h5>quick links</h5>
                     <ul>
                         <li>
@@ -65,17 +65,20 @@ export default function Footer(){
                         </li>
                     </ul>
                 </div>
-                <div className="box1">
-                    <h5 className="fw-bolder text-uppercase">tags</h5>
-                    <button>ssc</button>
-                    <button>ssc</button>
-                    <button>ssc</button>
-                    <button>ssc</button>
-                    <button>ssc</button>
-                    <button>ssc</button>
-                    <button>ssc</button>
-                    <button>ssc</button>
-                    <button>ssc</button>
+                <div className="box1 ">
+                    <h5 className="fw-bolder text-uppercase d-block">tags</h5><br />
+                    <div className="btns-outer">
+                        <img src="https://takalkarclasses.com/wp-content/uploads/2023/04/Group-97-1.png" alt="" />
+                        <img src="https://takalkarclasses.com/wp-content/uploads/2023/04/Group-98-1.png" alt="" />
+                        <img src="https://takalkarclasses.com/wp-content/uploads/2023/04/Group-99-1.png" alt="" />
+                        <img src="https://takalkarclasses.com/wp-content/uploads/2023/04/Group-95-1.png" alt="" />
+                        <img src="https://takalkarclasses.com/wp-content/uploads/2023/04/Group-96-1.png" alt="" />
+                        <img src="https://takalkarclasses.com/wp-content/uploads/2023/04/Group-94-2.png" alt="" />
+                        <img src="https://takalkarclasses.com/wp-content/uploads/2023/04/Group-100-1.png" alt="" />
+                        <img src="https://takalkarclasses.com/wp-content/uploads/2023/04/Group-101-1.png" alt="" />
+                        <img src="https://takalkarclasses.com/wp-content/uploads/2023/04/Group-102-1.png" alt="" />
+
+                    </div>
 
                 </div>
                 <div className="box1">
@@ -87,6 +90,13 @@ export default function Footer(){
                         <li>help center</li>
                         <li>feedback</li>
                     </ul>
+                </div>
+                <div>
+                    <p className="fw-bold ">SUBSCRIBE TO OUR NEWSLETTER</p>
+                    <form action="abc.html" method="post">
+                        <input type="email" placeholder="enter your email..."  required/>
+                        <button className="btn btn-success text-uppercase d-block mt-3">submit</button>
+                    </form>
                 </div>
             </div>
         </>
