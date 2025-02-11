@@ -1,19 +1,21 @@
+import {BrowserRouter as Router, Routes ,Route } from 'react-router-dom';
 import './App.css';
-import Menu from './website/heder/Menu.jsx';
-import About from './website/home/About.jsx';
-import Courses from './website/home/Courses.jsx';
-import Founder from './website/home/Founder.jsx';
-import Slider from './website/home/Slider.jsx';
+import Home from './website/home/Home';
+import Menu from './website/heder/Menu';
+import About from './website/About/About';
+
 
 
 function App() {
   return (
     <>
-        <Menu/>
-        <Slider />
-        <About />
-        <Courses/>
-        <Founder />
+      <Router>
+        <Menu />
+        <Routes>
+          <Route path='/' element={<Home/>}></Route>
+          <Route path='/About' element={<About></About>}></Route>
+        </Routes>
+      </Router>
     </>
   );
 }

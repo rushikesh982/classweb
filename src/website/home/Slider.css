@@ -7,4 +7,8 @@
 {
     height: 550px;
 }
+.carousel-inner
+{
+    width: 100%;
+}
 

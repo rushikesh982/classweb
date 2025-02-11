@@ -1,5 +1,7 @@
 // import React from "react"
 
+import { NavLink } from "react-router-dom";
+
 export default function Menu(){
     return(
         <>
@@ -53,8 +55,12 @@ export default function Menu(){
                 </div>
                 <div className="navItemBox ">
                     <ul>
-                        <li>Home</li>
-                        <li>About</li>
+                        <li>
+                            <NavLink className="nav-link d-inline" to='/'>Home</NavLink>
+                        </li>
+                        <li>
+                            <NavLink className='nav-link d-inline' to='/About'>About</NavLink>
+                        </li>
                         <li>Courses</li>
                         <li>Admission</li>
                         <li>Gallery</li>

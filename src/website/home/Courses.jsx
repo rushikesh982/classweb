@@ -27,12 +27,12 @@ function Courses(){
                 <div className="container-fluid">
                     <div className="row">
                         <div className="col-12">
-                            <div className="row">
-                                <div className="col-12 text-center p-5 coursesback">
+                            {/* <div className="row"> */}
+                                <div className=" text-center coursesback">
                                     <h1 className="fw-bolder text-uppercase">flexible courses</h1>
                                     <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quibusdam ea dolore temporibus deleniti distinctio vel a eos! Nulla ducimus natus tempora quo accusamus aperiam nesciunt nisi, perspiciatis sed, vero prespiciatis.</p>
                                 </div>
-                            </div>
+                            {/* </div> */}
                         </div>
                     </div>
                 </div>
@@ -42,7 +42,7 @@ function Courses(){
                         {data.map((item)=>{
                             return(
                                 <>
-                                    <div className="col-12 col-md-3">
+                                    <div className="col-12 col-sm-6 col-md-3">
                                         <div class="card">
                                             <img src={item.img} class="card-img-top" alt="..." />
                                             <div class="card-body text-center">

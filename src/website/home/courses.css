@@ -4,13 +4,15 @@
     color: white;
     padding-bottom: 40px;
 }
-.card-box
+.card-box .row
 {
-    position: absolute;
-    top: 80%;
-    left: 10vmax;
-    height: 350px;
+   display: flex;
+   flex-direction: row;
+   align-items: center;
+   justify-content: space-evenly;
+    margin-top: -50px;
 }
+
 .card-box .card
 {
     width: 300px;
@@ -23,13 +25,32 @@
     .card-box .card
     {
         width: 20vmax;
+        height: 30vmax;
+    }
+    .card-box .row
+    {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+
     }
 }
 @media (max-width: 768px) {
     .card-box .card
     {
-        width: 500px;
-        margin-top: 200px;
+        width: 30vmax;
+        height: 350px;
+        margin-top: 20px;
         margin-left: 0px;
+
+    }
+    .card-box .row
+    {
+        display: flex;
+        /* flex-direction: row; */
+        align-items: center;
+        justify-content: center;
+
     }
 }

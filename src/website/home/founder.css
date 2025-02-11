@@ -1,6 +1,6 @@
 .founder-sec
 {
-    margin-top: 400px !important;
+    /* margin-top: 400px !important; */
     /* background-color: red; */
 }
 .founder-sec img
@@ -10,6 +10,6 @@
 @media (max-width: 767px) {
     .founder-sec
     {
-        margin-top: 160vmax !important;
+        /* margin-top: 160vmax !important; */
     }
 }
