@@ -4,6 +4,7 @@ import Courses from './Courses.jsx';
 import Article from './Article.jsx';
 import Founder from './Founder.jsx';
 import Slider from "./Slider.jsx";
+import Footer from "../footer/Footer.jsx";
 // import Menu from "../heder/Menu.jsx";
 // import Menu from "./heder/Menu.jsx";
 

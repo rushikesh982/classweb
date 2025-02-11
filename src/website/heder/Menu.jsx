@@ -61,12 +61,20 @@ export default function Menu(){
                         <li>
                             <NavLink className='nav-link d-inline' to='/About'>About</NavLink>
                         </li>
-                        <li>Courses</li>
-                        <li>Admission</li>
-                        <li>Gallery</li>
-                        <li>Contact</li>
+                        <li>
+                            <NavLink className='nav-link d-inline' to='/courses'>courses</NavLink>
+                        </li>
+                        <li>
+                            <NavLink className='nav-link d-inline' to='/admission'>Admission</NavLink>
+                        </li>
+                        <li>
+                            <NavLink className='nav-link d-inline' to='/Gallery'>Gallery</NavLink>
+                        </li>
+                        <li>
+                            <NavLink className='nav-link d-inline' to='/Contact'>Contact</NavLink>
+                        </li>
                         <i class="ri-menu-line"></i>
-                        <button className="btn btn-danger text-capitalize">enquire now</button>
+                        <button className="btn btn-danger text-capitalize" data-bs-toggle="modal" data-bs-target="#exampleModal">enquire now</button>
                     </ul>
                 </div>
             </div>

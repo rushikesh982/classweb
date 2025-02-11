@@ -1,0 +1,23 @@
+.footerOuter
+{
+    background-image: url(https://takalkarclasses.com/wp-content/uploads/2023/04/image-83.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+.footerOuter1
+{
+    width: 300px;
+    padding: 0px 10px;
+}
+.box1
+{
+    height: auto;
+    /* width: auto; */
+    /* background-color: red; */
+
+}
