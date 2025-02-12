@@ -1,10 +1,15 @@
 import React from "react";
+import Admissionbanner from "./Admissionbanner";
+import { Form } from "react-router-dom";
+import Forms from "./Forms";
 
 
 export default function Admission(){
     return(
         <>
-            <h1>Admission</h1>
+            <Admissionbanner/>
+            <Forms/>
+        
         </>
     )
 }
