@@ -56,22 +56,40 @@ export default function Menu(){
                 <div className="navItemBox ">
                     <ul>
                         <li>
-                            <NavLink className="nav-link d-inline" to='/'>Home</NavLink>
+                            <NavLink className="nav-link d-inline" to='/'style={({ isActive }) => ({
+                                color: isActive ? "red" : "black",
+                                fontWeight: isActive ? "bold" : "normal",
+                            })}>Home</NavLink>
                         </li>
                         <li>
-                            <NavLink className='nav-link d-inline' to='/About'>About</NavLink>
+                            <NavLink className='nav-link d-inline' to='/About' style={({ isActive }) => ({
+                                color: isActive ? "red" : "black",
+                                fontWeight: isActive ? "bold" : "normal",
+                            })}>About</NavLink>
                         </li>
                         <li>
-                            <NavLink className='nav-link d-inline' to='/courses'>courses</NavLink>
+                            <NavLink className='nav-link d-inline' to='/courses'style={({ isActive }) => ({
+                                color: isActive ? "red" : "black",
+                                fontWeight: isActive ? "bold" : "normal",
+                            })}>courses</NavLink>
                         </li>
                         <li>
-                            <NavLink className='nav-link d-inline' to='/admission'>Admission</NavLink>
+                            <NavLink className='nav-link d-inline' to='/admission'style={({ isActive }) => ({
+                                color: isActive ? "red" : "black",
+                                fontWeight: isActive ? "bold" : "normal",
+                            })}>Admission</NavLink>
                         </li>
                         <li>
-                            <NavLink className='nav-link d-inline' to='/Gallery'>Gallery</NavLink>
+                            <NavLink className='nav-link d-inline' to='/Gallery'style={({ isActive }) => ({
+                                color: isActive ? "red" : "black",
+                                fontWeight: isActive ? "bold" : "normal",
+                            })}>Gallery</NavLink>
                         </li>
                         <li>
-                            <NavLink className='nav-link d-inline' to='/Contact'>Contact</NavLink>
+                            <NavLink className='nav-link d-inline' to='/Contact'style={({ isActive }) => ({
+                                color: isActive ? "red" : "black",
+                                fontWeight: isActive ? "bold" : "normal",
+                            })}>Contact</NavLink>
                         </li>
                         <i class="ri-menu-line"></i>
                         <button className="btn btn-danger text-capitalize" data-bs-toggle="modal" data-bs-target="#exampleModal">enquire now</button>

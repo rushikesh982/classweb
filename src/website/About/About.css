@@ -1,0 +1,74 @@
+.bannerBox
+{
+    background-image: url(https://takalkarclasses.com/wp-content/uploads/2023/11/About-Us-1.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 250px;
+    width: 100%;
+    margin-bottom: 50px;
+    position: relative;
+    
+    color: white;
+}
+.bannerinner
+{
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.707);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+/* teachingmethd */
+.teachingmethd
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+}
+.teachingmethd img
+{
+    height: 40vmax;
+}
+.aboutTaklkarOuter
+{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+.aboutTaklkarOuter .box2
+{
+    width: 450px;
+}
+/* aboutfounderbox */
+
+.aboutfounderbox
+{
+    margin-top: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+.aboutfounderbox .founderdetail
+{
+    width: 700px;
+}
+.aboutfounderbox .founderimage img
+{
+    height: 300px;
+    /* width: 150px; */
+}
+.differentBox img
+{
+    height: 25px;
+}
+@media (max-width:503px) {
+    .teachingmethd img
+{
+    height: 40vmin;
+}
+}

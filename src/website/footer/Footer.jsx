@@ -46,7 +46,7 @@ export default function Footer(){
                     <h5>Reach out to us </h5>
                     <p><i class="ri-mail-line d-inline"></i><a href="mailto:learn@takalkarclasses.com" className="text-light text-decoration-none">learn@takalkarclasses.com</a>
                     </p>
-                    <p><i class="ri-phone-line"></i>+91 1234567890</p>
+                    <p><a href="tel:%20+91%2012345%2067890" className="text-light text-decoration-none" target="_blank"><i class="ri-phone-line"></i>+91 1234567890</a></p>
                 </div>
                 <div className="box1 quickLinks">
                     <h5>quick links</h5>

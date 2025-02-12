@@ -1,11 +1,20 @@
 import React from "react";
+import Aboutbanner from "./Aboutbanner";
+import Teachingmethd from "./Teachingmethd";
+import Abouttaklkar from "./Abouttaklkar";
+import Aboutfounder from "./Aboutfounder";
+import Different from "./Different";
 
 
 export default function About()
 {
     return(
         <>
-            <h1>about sec</h1>
+            <Aboutbanner/>
+            <Abouttaklkar/>
+            <Aboutfounder/>
+            <Different/>
+            <Teachingmethd/>
         </>
     )
 }
