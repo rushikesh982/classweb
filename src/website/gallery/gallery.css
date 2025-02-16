@@ -1,0 +1,79 @@
+/* bannerbox */
+
+.bannerBox
+{
+    background-image: url('https://takalkarclasses.com/wp-content/uploads/2023/11/Gallary.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 250px;
+    width: 100%;
+    margin-bottom: 50px;
+    position: relative;
+    
+    color: white;
+}
+.bannerinner
+{
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.707);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+/* banne end */
+/* images section */
+
+.imagebox
+{
+    height: 350px;
+    width: 350px;
+    position: relative;
+    background-image: url();
+    background-repeat: no-repeat;
+    background-position: fixed;
+    background-size: cover;
+}
+.imagebox img
+{
+    height: 100%;
+    width: 100%;
+}
+.imageboxinner
+{
+    height: 100%;
+    position: absolute;
+    top: 0px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.imageboxinner i
+{
+    font-size: 10px;
+    padding: 15px;
+    background-color: #f90cf5;
+    border-radius: 50%;
+    font-weight: bolder;
+    display: none;
+}
+.imagebox:hover .imageboxinner
+{
+    background-color: rgba(0, 0, 0, 0.619);
+    transition: ease-in all 0.3s;
+}
+.imagebox:hover i
+{
+    display: block;
+    color: white;
+    font-size: 1vw;
+}
+.imgouter
+{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}

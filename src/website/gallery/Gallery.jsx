@@ -1,23 +1,14 @@
-// import React from "react";
-
-
-// export default function Gallery(){
-//     return(
-//         <>
-//             <h1>gallery</h1>
-//         </>
-//     )
-// }
-
-
 import React from "react";
+import Gallerybanner from "./Gallerybanner";
+import Images from "./Images";
 
 
 export default function Gallery()
 {
     return(
         <>
-            <h1>Gallery</h1>
+            <Gallerybanner/>
+            <Images />
         </>
     )
 }
