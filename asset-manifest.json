@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/classweb/static/css/main.c8b06178.css",
+    "main.js": "/classweb/static/js/main.cacdd1f6.js",
+    "static/js/488.8af50a5d.chunk.js": "/classweb/static/js/488.8af50a5d.chunk.js",
+    "index.html": "/classweb/index.html",
+    "main.c8b06178.css.map": "/classweb/static/css/main.c8b06178.css.map",
+    "main.cacdd1f6.js.map": "/classweb/static/js/main.cacdd1f6.js.map",
+    "488.8af50a5d.chunk.js.map": "/classweb/static/js/488.8af50a5d.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.c8b06178.css",
+    "static/js/main.cacdd1f6.js"
+  ]
+}
