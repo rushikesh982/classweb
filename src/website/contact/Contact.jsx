@@ -1,10 +1,14 @@
 import React from "react";
+import Contactbanner from "./Contactbanner";
+import Maps from "./Maps";
+
 
 export default function Contact()
 {
     return(
         <>
-            <h1>contact</h1>
+            <Contactbanner/>
+            <Maps/>
         </>
     )
 }

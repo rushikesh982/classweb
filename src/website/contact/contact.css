@@ -1,0 +1,22 @@
+.aboutbannerBox
+{
+    background-image: url(https://takalkarclasses.com/wp-content/uploads/2023/11/Contact-Us.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 300px;
+    width: 100%;
+    margin-bottom: 50px;
+    position: relative;
+    
+    color: white;
+}
+.aboutbannerinner
+{
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.707);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
